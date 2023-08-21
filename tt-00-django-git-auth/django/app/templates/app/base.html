@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link href="http://fonts.cdnfonts.com/css/neogrey-2" rel="stylesheet">
+
+  </head>
+  <body>
+    <main>
+      {% block content %}
+      {% endblock content %}
+    </main>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+  {% block scripts %}
+  {% endblock scripts %}
+</html>

@@ -1,0 +1,30 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+  <div class="number-container">
+    <p class="number">000-000</p>
+  </div>
+  <a class="logout" href="{% url 'logout' %}?next=/">Logout</a>
+{% endblock %}
+
+{% block scripts %}
+  <script src="https://cdn.socket.io/socket.io-1.0.0.js"></script>
+  <script type="importmap">
+  {
+    "imports": {
+      "socket.io-client": "https://cdn.socket.io/4.4.1/socket.io.esm.min.js"
+    }
+  }
+  </script>
+
+  <script type="module">
+    import { io } from "socket.io-client";
+
+    const socket = io("ws://localhost:5000");
+    // const socket = io("ws://testtask00server.herokuapp.com");
+    socket.on('new_data', function ( data ) {
+      console.log(data)
+      $('.number').html(data.number)
+    })
+  </script>
+{% endblock %}

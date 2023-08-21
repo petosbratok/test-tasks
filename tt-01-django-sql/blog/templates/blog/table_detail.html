@@ -1,0 +1,66 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% load my_filters %}
+
+{% block links %}
+<link rel="stylesheet" type="text/css" href="{% static 'blog/tablemaster.css' %}">
+{% endblock links %}
+
+{% block content %}
+<table class="table">
+      <p>{{ table.title }}</p>
+      <tr class="row">
+        <th colspan="1" class="name-col">Имя \ Номер дня</th>
+        {% for i in table.length|add:1|times %}
+            {% if not i == 0 %}
+            <th colspan="1" class="day-col col">{{ i }}</th>
+            {% endif %}
+        {% endfor %}
+      <tr>
+      {% for worker in workers %}
+        <tr class="worker row" value='{{ worker }}'>
+          {% for col in worker %}
+              {% if col == worker.0 %}
+                <th  class="name-col">
+                  {{ col }}
+                </th>
+              {% else %}
+                <th  class="col">
+                  <input
+                    type="text"
+                    id="{{forloop.parentloop.counter}},{{forloop.counter}}"
+                    onchange="change_data({{forloop.parentloop.counter}},{{forloop.counter}})"
+                    value="{{ col }}",
+                    text="{{ col }}">
+                </th>
+              {% endif %}
+          {% endfor %}
+        </tr>
+
+      {% endfor %}
+</table>
+<form class="" method="post">
+  {% csrf_token %}
+  <input style='display:none' id="data-input" type="text" name="data" value="">
+  <button type="submit" onclick="setup_data()" name="button">Сохранить</button>
+</form>
+{% endblock content %}
+
+{% block scripts %}
+<script type="text/javascript">
+  data = []
+  $('.worker').each(function(i, obj) {
+    data.push(obj.getAttribute('value').slice(1, -1).replace(/['"]+/g, '').split(', '))
+  });
+
+  function change_data(row, col){
+
+    data[row-1][col-1] = document.getElementById(row + ',' + col).value
+    console.log(data)
+  }
+
+  function setup_data(){
+    document.getElementById('data-input').value = data.join(';')
+  }
+</script>
+{% endblock scripts %}

@@ -1,0 +1,297 @@
+.main{
+  margin: 0 auto;
+  padding-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.content{
+  margin-top: 50px;
+  min-height: 50vh;
+  margin-bottom: 50px;
+  padding: 15px 0;
+  width: 85%;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding-bottom: 0;
+}
+
+.tool-info{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.tool-image{
+  flex-grow: 0;
+  height: 40px;
+  width: 40px;
+  object-fit:cover;
+  margin: auto 15px;
+  border-radius: 100px;
+}
+.info-panel{
+  flex-grow: 1;
+}
+
+.info-main{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-panel select{
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #23B04A;
+  color: #23B04A;
+  letter-spacing: 0.25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='rgba(0, 0, 0, 0.6)' height='22' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 1.5px;
+  padding-right: 24px;
+}
+
+.info-main p{
+  font-size: 1.25em;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+  letter-spacing: 0.15px;
+}
+
+.state-block{
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fav-image{
+  height: 20px;
+  margin-left: 20px;
+}
+
+.id-container{
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  font-size: 0.75em;
+  display: flex;
+  align-items: center;
+}
+
+.id-container img{
+  height: 4px;
+  width: 3px;
+  margin: 0 10px;
+  padding-top: 1px;
+  margin-bottom: 2px;
+}
+
+.menu{
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu select{
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  font-size: 1.1em;
+  color: rgba(0, 0, 0, 0.87);
+  margin-left: 30px;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='rgba(0, 0, 0, 0.6)' height='22' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 10px;
+  padding-right: 30px;
+}
+
+.clock-image{
+  height: 40px;
+  padding: 8px;
+  padding-right: 9px;
+  border-radius: 3px;
+  margin-right: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.fast-buttons, .save-pdf, .dates, .dates-shortcuts{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.save-pdf{
+  color: #23B04A;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  padding: 8px 12px;
+  height: 40px;
+  font-weight: 500;
+  padding-right: 0;
+  margin-right: 20px;
+}
+
+.save-pdf span{
+  padding-right: 10px;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.dots-image{
+  padding: 0 12px;
+  height: 20px;
+}
+
+.dates{
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.arrow-right{
+  height: 16px;
+  margin: 0 16px;
+}
+
+.date-field{
+  color: rgba(0, 0, 0, 0.68);
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.15)
+}
+
+.dates-shortcuts{
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.dates-shortcuts span{
+  /* font-size: 0.9em; */
+  background-color: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, 0.6);
+  padding: 6px 10px;
+  margin-right: 10px;
+  border-radius: 100px;
+}
+
+.light-green{
+  background-color: #C2E7C8 !important;
+}
+
+.usage-panel{
+  /* font-size: 0.9em; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 20px;
+  padding-bottom: 15px;
+}
+
+.usage-panel *{
+  letter-spacing: 0.25px;
+}
+
+.usage-head{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.38);
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08)
+}
+
+.usage-item{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08)
+}
+
+.date{
+  width: 15%;
+  color: rgba(0, 0, 0, 0.38);
+}
+
+.type{
+  width: 14%;
+}
+
+.usage-item .type{
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.work-in-process{
+  color: #23B04A;
+}
+
+.usage{
+  width: 42%;
+}
+
+.result{
+  width: 15%;
+}
+
+.usage-item .result{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.usage-item .result span{
+  color: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  height: 72px;
+  max-width: 85%;
+  padding-right: 15px;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.result img{
+  height: 13px;
+  padding-right: 15px;
+}
+
+.username{
+  width: 13%;
+}
+
+.usage-item .username{
+  color: #2E9BC2;
+  text-decoration: underline;
+}
+
+li{
+  list-style: none;
+}
+
+.usage-type{
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+}
+
+.usage-property{
+  color: rgba(0, 0, 0, 0.6);
+}

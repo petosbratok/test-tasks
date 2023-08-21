@@ -1,0 +1,17 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+
+{% block links %}
+  <link rel="stylesheet" type="text/css" href="{% static 'blog/home.css' %}">
+{% endblock links %}
+
+{% block content %}
+  {% for table in tables %}
+    <p><a class="table-link" href="table/{{ table.id }}" >{{ table.title }}</a></p>
+  {% endfor %}
+{% endblock content %}
+
+{% block scripts %}
+
+{% endblock scripts %}

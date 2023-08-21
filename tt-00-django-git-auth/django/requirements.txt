@@ -1,0 +1,5 @@
+django==3.2.6
+social-auth-app-django
+channels
+gunicorn
+django-heroku

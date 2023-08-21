@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/analytics.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>BIOCAD тестовое задание</title>
+  </head>
+  <body>
+    <nav>
+      <a href="home.html" class="logo" style="color: inherit">
+        <span>b</span>
+        <span class="img-container"><img src="pics/logo.png" alt=""></span>
+        <span>tanique</span>
+      </a>
+      <div class="pages">
+        <div class="page-name">
+          <a href="home.html">Главная</a>
+        </div>
+        <div class="page-name active">
+          <span>Аналитика</span>
+        </div>
+      </div>
+      <div class="profile">
+        <img src="pics/avatar.jpg" alt="Profile picture">
+      </div>
+    </nav>
+    <div class="main">
+      <div class="content">
+        <div class="tool-info">
+        </div>
+        <div class="menu">
+          <select class="" name="">
+            <option value="">Работа прибора</option>
+          </select>
+          <div class="fast-buttons">
+            <img class="clock-image" src="pics/clock.png" alt="">
+            <div class="save-pdf">
+              <span>Сохранить PDF</span>
+              <img class="dots-image" src="pics/three_dots.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="dates">
+          <input type="datetime-local" id="date-1" class="date-field" name="" value="">
+          <img src="pics/arrow-right.png" class="arrow-right">
+          <input type="datetime-local" id="date-2" class="date-field" name="" value="">
+        </div>
+        <div class="dates-shortcuts">
+          <span onClick="paintGreen(0)">День</span>
+          <span onClick="paintGreen(1)">Неделя</span>
+          <span onClick="paintGreen(2)">2 недели</span>
+          <span onClick="paintGreen(3)">Месяц</span>
+          <span onClick="paintGreen(4)">3 месяца</span>
+          <span onClick="paintGreen(5)">Полгода</span>
+        </div>
+        <div class="usage-panel">
+          <div class="usage-head">
+            <div class="date">
+              <span>Начало</span>
+            </div>
+            <div class="type">
+              <span>Тип работ</span>
+            </div>
+            <div class="usage">
+              <span>Работы</span>
+            </div>
+            <div class="result">
+              <span>Результат</span>
+            </div>
+            <div class="username">
+              <span>Пользователь</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+  src="https://code.jquery.com/jquery-3.6.1.slim.js"
+  integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/analytics.js"></script>
+</html>

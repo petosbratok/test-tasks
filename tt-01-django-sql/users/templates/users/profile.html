@@ -1,0 +1,24 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block links%}
+  <link rel="stylesheet" type="text/css" href="{% static 'blog/single-form-page.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'blog/profile-media.css' %}">
+{% endblock links %}
+{% block content %}
+  <div class="content-section">
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">Profile Info</legend>
+            {{ u_form|crispy }}
+            {{ p_form|crispy }}
+            <div class="button-container">
+              <div class="form-group">
+                <button class="btn btn-outline-success" type="sumbit">Применить</button>
+              </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+{% endblock content %}

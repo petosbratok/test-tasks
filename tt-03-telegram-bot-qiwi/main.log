@@ -1,0 +1,8 @@
+INFO at 2022-10-15 00:07:06,748: User 370394231 created bill WhiteApfel-PyQiwiP2P-78162634-56. Amount: 500 rubles.
+INFO at 2022-10-15 00:10:00,263: User 370394231 created bill WhiteApfel-PyQiwiP2P-78179998-940. Amount: 500 rubles.
+INFO at 2022-10-15 00:12:07,472: Admin panel accessed by user: 370394231.
+INFO at 2022-10-15 00:14:37,413: User 370394231 accessed user balances.
+INFO at 2022-10-15 00:14:53,641: User 370394231 manually set user 370394231 balance to 500 rubles.
+INFO at 2022-10-15 00:17:33,284: Admin panel accessed by user: 370394231.
+INFO at 2022-10-15 00:17:34,998: User 370394231 accessed logs.
+INFO at 2022-10-15 00:20:37,189: User 37039423 banned by user 370394231.
